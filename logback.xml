@@ -14,7 +14,7 @@
             <pattern>${FILE_LOG_PATTERN}</pattern>
         </encoder>
     </appender>
-    <logger name="searchengine.config.PageLemmaIndexDBSave" level="INFO" additivity="true">
+    <logger name="searchengine.config.LemmaIndexDBSave" level="INFO" additivity="true">
         <appender-ref ref="FILE"/>
     </logger>
     <logger name="searchengine.services.IndexingService" level="INFO" additivity="true">

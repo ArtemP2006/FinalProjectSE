@@ -2,7 +2,7 @@ package searchengine.services;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import searchengine.config.PageLemmaIndexDBSave;
+import searchengine.config.LemmaIndexDBSave;
 import searchengine.dto.IndexPageResponse;
 import searchengine.dto.StartIndexingResponse;
 import searchengine.dto.StopIndexingResponse;
@@ -30,13 +30,13 @@ public class IndexingService {
     private final IndexService indexService;
     private final StopIndexingResponse stopResponse;
     private final StartIndexingResponse startResponse;
-    private final PageLemmaIndexDBSave justGetFields;
+    private final LemmaIndexDBSave justGetFields;
 
     public IndexingService(SiteService siteService,
                            PageService pageService,
                            LemmaService lemmaService,
                            IndexService indexService,
-                           PageLemmaIndexDBSave justGetFields
+                           LemmaIndexDBSave justGetFields
     ) {
         this.siteService = siteService;
         this.pageService = pageService;
@@ -138,7 +138,7 @@ public class IndexingService {
     private void saveToDB(Site site) {
         long start = System.currentTimeMillis();
         ForkJoinPool pool = new ForkJoinPool();
-        PageLemmaIndexDBSave task = new PageLemmaIndexDBSave(pageService, lemmaService, indexService, siteService);
+        LemmaIndexDBSave task = new LemmaIndexDBSave(pageService, lemmaService, indexService, siteService);
         task.setPage(new Page(site, site.getUrl(), 0, null));
         try {
             pool.execute(task);
