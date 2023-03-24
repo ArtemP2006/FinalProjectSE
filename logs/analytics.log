@@ -1,0 +1,9 @@
+2023-03-24 16:53:02.021  INFO 8278 --- [http-nio-8080-exec-9] searchengine.services.IndexingService    : All pages, lemmas and indexes are deleted
+2023-03-24 16:53:03.576  INFO 8278 --- [DomBulgakova/] searchengine.services.IndexingService    : Site https://dombulgakova.ru is indexed, count of pages - 0
+2023-03-24 16:53:03.577  INFO 8278 --- [DomBulgakova/] searchengine.services.IndexingService    : Time Spent - 1.53s
+2023-03-24 16:53:05.463  INFO 8278 --- [ForkJoinPool-2-worker-1] s.config.PageLemmaIndexDBSave            : https://nikoartgallery.com/arenda/
+2023-03-24 16:53:07.506  INFO 8278 --- [ForkJoinPool-2-worker-1] s.config.PageLemmaIndexDBSave            : https://nikoartgallery.com/en/
+2023-03-24 16:53:09.626  INFO 8278 --- [ForkJoinPool-2-worker-1] s.config.PageLemmaIndexDBSave            : https://nikoartgallery.com/en/gallery/
+2023-03-24 16:53:11.516  INFO 8278 --- [ForkJoinPool-2-worker-1] s.config.PageLemmaIndexDBSave            : https://nikoartgallery.com/en/gallery/?PAGEN_1=2&SIZEN_1=20
+2023-03-24 16:53:13.069  INFO 8278 --- [ForkJoinPool-2-worker-1] s.config.PageLemmaIndexDBSave            : https://nikoartgallery.com/en/afisha/
+2023-03-24 16:53:14.810  INFO 8278 --- [ForkJoinPool-2-worker-1] s.config.PageLemmaIndexDBSave            : https://nikoartgallery.com/en/author/
